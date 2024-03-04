@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="bg">
+        <img class="main_img" src="rectangle.png" />
+      </section>
+      <section class="content">
+        <div class="allcontent">
+          <div class="top">
+            <div class="logo">
+              <img class="icon" src="logo.png" />
+              <img class="logotext" src="logotext.svg" />
+            </div>
+            <div class="nice"><h3>Nice to see you again</h3></div>
+            <div class="login"><label for="email">Login</label></div>
+            <input
+              id="email"
+              class="input1"
+              type="text"
+              placeholder="Email or phone number"
+            />
+            <div class="login"><label for="pass">Password</label></div>
+            <div class="pass_0">
+              <input
+                id="pass"
+                class="input1"
+                type="password"
+                placeholder="Enter password"
+              />
+              <img src="Login-Icons.svg">
+            </div>
+            <div class="remember">
+              <div>
+                <input class="input_check" type="checkbox" id="checkbox" />
+                <label class="check" for="checkbox">Remember me</label>
+              </div>
+              <a href="#">Forgot password?</a>
+            </div>
+            <input class="sub" type="submit" value="Sign in" />
+          </div>
+          <hr />
+          <div class="bottom">
+            <div class="google">
+              <button class="sub2" type="submit">
+                <img src="google_icon.svg" alt="иконка Google" />
+                <p>Or sign in with Google</p>
+              </button>
+            </div>
+            <div class="sign_up">
+              <p>Dont have an account?</p>
+              <a href="#">Sign up now</a>
+            </div>
+            <div class="footer">
+              <div class="f_left">
+                <img src="Figma.svg" />
+                <a href="#">@uiunicorn</a>
+              </div>
+              <p>© Perfect Login 2021</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

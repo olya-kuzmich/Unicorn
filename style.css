@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  display: flex;
+  margin: 0 auto;
+}
+section {
+  
+  /* width: 100%; */
+  /* max-height: 900px;
+  height: 100%; */
+}
+/* .content{
+  width: 100%;
+} */
+.content{
+  flex-grow: 1;
+}
+.main_img {
+  max-width: 984px;
+  width: 100%;
+  /* max-height: 900px;
+  height: 100%; */
+  /* height: 900px;
+  object-fit: cover; */
+  height: 100%;
+  object-fit: cover;
+}
+.allcontent {
+  /* max-width: 456px;
+  width: 100%; */
+  padding: 48px;
+  width: 456px;
+}
+.logo {
+  position: relative;
+  height: 48px;
+  margin-bottom: 48px;
+}
+.logotext {
+  position: absolute;
+  top: 17px;
+  left: 57.61px;
+}
+.icon {
+  position: absolute;
+  top: 7.25px;
+}
+.nice {
+  color: #1a1a1a;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 140%;
+  margin-bottom: 24px;
+}
+.login {
+  color: #333;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 109.091%;
+  padding: 0 16px;
+  margin-bottom: 8px;
+}
+.pass_0 {
+  position: relative;
+  max-width: 360px;
+  width: 100%;
+}
+.pass_0 img {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.input1 {
+  max-width: 360px;
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  background-color: rgb(245, 243, 243);
+  border-radius: 6px;
+  color: #808080;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 133.333%;
+  margin-bottom: 16px;
+}
+.check {
+  position: relative;
+  padding-left: 48px;
+  color: #1a1a1a;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+.check::before {
+  content: "";
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  position: absolute;
+  left: 0;
+  transition: 0.5s;
+}
+.check::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  top: -2px;
+  transition: 0.5s;
+}
+.input_check {
+  display: none;
+}
+.input_check:checked ~ .check::before {
+  background-color: rgb(85, 165, 246);
+}
+.input_check:checked ~ .check::after {
+  left: 21px;
+  top: -2px;
+}
+.remember {
+  max-width: 360px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.remember a {
+  color: #007aff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+}
+.sub {
+  max-width: 360px;
+  width: 100%;
+  height: 40px;
+  padding: 10px 24px;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  border-radius: 6px;
+  background: #007aff;
+  border: none;
+  margin-bottom: 32px;
+}
+hr {
+  opacity: 30%;
+}
+.sub2 {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  background: #333;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  max-width: 360px;
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+.sign_up {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 219px;
+}
+.sign_up p {
+  color: #1a1a1a;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+.sign_up a {
+  color: #007aff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+}
+.footer {
+  max-width: 360px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.f_left {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.f_left a {
+  color: #007aff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.4px;
+}
+.footer p {
+  color: #666;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.4px;
+}
+label{
+  cursor: pointer;
+}
+@media(max-width:860px){
+  .allcontent{
+    padding: 15px;
+  }
+  main{
+    flex-wrap: wrap;
+  }
+  .allcontent{
+    max-width: 456px;
+    width: 100%;
+  }
+}
