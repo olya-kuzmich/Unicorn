@@ -131,14 +131,14 @@ main {
   position: absolute;
   left: 3px;
   top: 2px;
-  top: -2px;
+  top: -1.5px;
   transition: 0.5s;
 }
 .input_check {
   display: none;
 }
 .input_check:checked ~ .check::before {
-  background-color: rgb(85, 165, 246);
+  background-color: #007aff;
 }
 .input_check:checked ~ .check::after {
   left: 21px;
