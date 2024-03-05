@@ -7,16 +7,9 @@
 
 main {
   display: flex;
-   background-color: gainsboro;
+  background-color: gainsboro;
 }
-section {
-  /* width: 100%; */
-  /* max-height: 900px;
-  height: 100%; */
-}
-/* .content{
-  width: 100%;
-} */
+
 .content {
   flex-grow: 1;
 }
@@ -273,11 +266,29 @@ label {
   .allcontent {
     padding: 15px;
   }
-  main {
+  /* main {
     flex-wrap: wrap;
-  }
+  } */
   .allcontent {
     max-width: 456px;
     width: 100%;
+  }
+  .main_img {
+    border-radius: 30px;
+  }
+  .allcontent {
+    border-radius: 30px;
+  }
+  .bg {
+    display: none;
+  }
+  /* main {
+    display: block;
+  } */
+  .content {
+    max-width: 400px;
+  }
+  main {
+    justify-content: center;
   }
 }
