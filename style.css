@@ -4,12 +4,12 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+
 main {
   display: flex;
-  margin: 0 auto;
+   background-color: gainsboro;
 }
 section {
-  
   /* width: 100%; */
   /* max-height: 900px;
   height: 100%; */
@@ -17,8 +17,11 @@ section {
 /* .content{
   width: 100%;
 } */
-.content{
+.content {
   flex-grow: 1;
+}
+.bg {
+  position: relative;
 }
 .main_img {
   max-width: 984px;
@@ -29,12 +32,30 @@ section {
   object-fit: cover; */
   height: 100%;
   object-fit: cover;
+  border-radius: 30px 0 0 30px;
+  background-color: gainsboro;
+}
+.bg p {
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.4px;
+  bottom: 49px;
+  left: 48px;
+}
+.bg p a {
+  text-decoration-line: underline;
+  cursor: pointer;
 }
 .allcontent {
   /* max-width: 456px;
   width: 100%; */
   padding: 48px;
   width: 456px;
+  border-radius: 0 30px 30px 0;
+  background-color: #fff;
 }
 .logo {
   position: relative;
@@ -162,6 +183,13 @@ section {
   background: #007aff;
   border: none;
   margin-bottom: 32px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.sub:hover {
+  color: #007aff;
+  background-color: #fff;
+  outline: #007aff solid 2px;
 }
 hr {
   opacity: 30%;
@@ -182,6 +210,14 @@ hr {
   width: 100%;
   margin-top: 32px;
   margin-bottom: 24px;
+  cursor: pointer;
+  transition: 0.4s;
+  border: none;
+}
+.sub2:hover {
+  color: #333;
+  background-color: #fff;
+  outline: #333 solid 2px;
 }
 .sign_up {
   display: flex;
@@ -230,17 +266,17 @@ hr {
   line-height: 16px;
   letter-spacing: -0.4px;
 }
-label{
+label {
   cursor: pointer;
 }
-@media(max-width:860px){
-  .allcontent{
+@media (max-width: 860px) {
+  .allcontent {
     padding: 15px;
   }
-  main{
+  main {
     flex-wrap: wrap;
   }
-  .allcontent{
+  .allcontent {
     max-width: 456px;
     width: 100%;
   }
